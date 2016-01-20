@@ -1,8 +1,8 @@
 # Opinionated Coder
 My name is _Gian Carlo_ a.k.a. #gicappa# and I'm an opinionated coder. My opinions comes after more than 15 years of development and architectures of systems 
 
+## IDE & Editors
 ## Application Structures
-
 ## Architectures
 In this section I will present a bunch of architectures that can be built using chef over different server systems:
 * AWS
