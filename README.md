@@ -25,3 +25,6 @@ http://stackoverflow.com/questions/5343068/is-there-a-way-to-skip-password-typin
 # SysAdmin
 ## iotop 
 http://www.cyberciti.biz/hardware/linux-iotop-simple-top-like-io-monitor/
+
+# Opening a HTTP server on the curren directory
+python -m SimpleHTTPServer
