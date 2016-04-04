@@ -14,6 +14,12 @@ In this section I will present a bunch of architectures that can be built using 
 #### Remove branches no longer on remote
 ```git gc --prune=now``` do the trick
 ```git fetch -p```
+#### Rename a branch
+````git branch -m <oldname> <newname>````
+
+If you want to rename the current branch, you can simply do:
+
+````git branch -m <newname>````
 
 #### Chaching GIT credential for https access
 ```git config --global credential.helper osxkeychain```
