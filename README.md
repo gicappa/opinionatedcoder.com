@@ -34,3 +34,52 @@ http://www.cyberciti.biz/hardware/linux-iotop-simple-top-like-io-monitor/
 
 # Opening a HTTP server on the curren directory
 python -m SimpleHTTPServer
+
+# Maven 
+## Create a local repository where to store an artifact without using artifactory
+Add this lines to the ```pom.xml``` of the artifact to be exported 
+```
+  <distributionManagement>
+
+    <!-- Publish versioned releases here -->
+    <repository>
+      <id>local-repo-r</id>
+      <name>my releases</name>
+      <url>file://${project.basedir}/local-repo/releases</url>
+    </repository>
+
+    <!-- Publish snapshots here -->
+    <snapshotRepository>
+      <id>local-repo</id>
+      <name>my snapshots</name>
+      <url>file://${project.basedir}/local-repo/snapshots</url>
+    </snapshotRepository>
+
+  </distributionManagement>
+```
+and launch ```mvn deploy```. Than copy the directory local-repo that has been created in the project where you need the exported jar. In the ```pom.xml``` of the client of the jar add the following lines:
+```
+<repositories>
+    <repository>
+      <id>local-repo</id>
+      <url>file://${main.basedir}/local-repo/snapshots</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+    </repository>
+    
+    <repository>
+      <id>local-repo-r</id>
+      <url>file://${main.basedir}/local-repo/releases</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+    </repository>
+  </repositories>
+```
