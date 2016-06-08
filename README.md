@@ -1,5 +1,5 @@
 # Opinionated Coder
-My name is _Gian Carlo_ a.k.a. #gicappa# and I'm an opinionated coder. My opinions comes after more than 15 years of development and architectures of systems 
+My name is _Gian Carlo_ a.k.a. *gicappa* and I'm an opinionated coder. My opinions comes after more than 15 years of development and architectures of systems 
 
 ## IDE & Editors
 ## Application Structures
@@ -38,7 +38,7 @@ python -m SimpleHTTPServer
 # Maven 
 ## Create a local repository where to store an artifact without using artifactory
 Add this lines to the ```pom.xml``` of the artifact to be exported 
-```
+```xml
   <distributionManagement>
 
     <!-- Publish versioned releases here -->
@@ -58,7 +58,7 @@ Add this lines to the ```pom.xml``` of the artifact to be exported
   </distributionManagement>
 ```
 and launch ```mvn deploy```. Than copy the directory local-repo that has been created in the project where you need the exported jar. In the ```pom.xml``` of the client of the jar add the following lines:
-```
+```xml
 <repositories>
     <repository>
       <id>local-repo</id>
