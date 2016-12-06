@@ -83,3 +83,7 @@ and launch ```mvn deploy```. Than copy the directory local-repo that has been cr
     </repository>
   </repositories>
 ```
+
+# Drafts
+## Evolution of the coding by intention
+When coding just create the interface of what is needed and create and shape the methods while using them. After the interface is fitting the needs just add the desired behavior.
