@@ -87,3 +87,6 @@ and launch ```mvn deploy```. Than copy the directory local-repo that has been cr
 # Drafts
 ## Evolution of the coding by intention
 When coding just create the interface of what is needed and create and shape the methods while using them. After the interface is fitting the needs just add the desired behavior.
+
+## Coding hints 
+When working with classes belonging to some external libraries or I/O related details is always necessary to challeng the abstraction already present and their shape and protocol. The risk is always to create some procedural code. BTW Is better to create some procedural code if we are unsure about the abstraction and create the abstraction in a secod time when the behavior of the class is well defined.
