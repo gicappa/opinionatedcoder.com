@@ -14,3 +14,4 @@ public class DefaultDeliveryAgent implements DeliveryAgent {
 }
 ```
 
+## The domain module will hold all the domain abstraction with adaptor interfaces
