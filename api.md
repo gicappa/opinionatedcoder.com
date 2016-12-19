@@ -16,7 +16,9 @@ Javadoc is a bit oldish and it could be improved a lot to document java apis.
 
 Based on Swagger work https://www.openapis.org/ try to specify a vendor independent description of RESTful APIs (https://github.com/OAI/OpenAPI-Specification)
 
-## Tools to describe document APIs
+## Tools
+
+### Describe and Document APIs
 * Swagger - http://swagger.io/
 * Apiary - https://apiary.io/
 * Mashape - https://www.mashape.com/
@@ -24,6 +26,8 @@ Based on Swagger work https://www.openapis.org/ try to specify a vendor independ
 * MireDot - http://www.miredot.com/
 * Read the Docs - http://rtfd.org
 
-## HOAETOS 
+## Proxy, Logging and Security
+* Kong - https://getkong.org/
 
+## HOAETOS 
 TBD - write down what to take into account of that (ids in return when creating a resource, links in the headers, etags...)
