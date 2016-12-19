@@ -8,7 +8,7 @@ Here you can find a list of tools to document APIs
 ## Javadoc
 Javadoc is a bit oldish and it could be improved a lot to document java apis. 
 
-[x] create a template to improve the quality of the documentation of the java files to end up with something similar to _Read the docs/Sphinx_ (rtfd.org) with a search field highlighitings Tips, Warinings, table of contents...
+[x] create a template to improve the quality of the documentation of the java files to end up with something similar to _Read the docs/Sphinx_ (http://rtfd.org) with a search field highlighitings Tips, Warinings, table of contents...
 
 # RESTful API resources
 
@@ -20,4 +20,6 @@ Based on Swagger work https://www.openapis.org/ try to specify a vendor independ
 * Swagger - http://swagger.io/
 * Apiary - https://apiary.io/
 * Mashape - https://www.mashape.com/
-* RAML - http://raml.org/?refer=api-portal
+* RAML - http://raml.org/
+* MireDot - http://www.miredot.com/
+* Read the Docs - http://rtfd.org
