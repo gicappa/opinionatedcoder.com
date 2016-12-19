@@ -23,3 +23,7 @@ Based on Swagger work https://www.openapis.org/ try to specify a vendor independ
 * RAML - http://raml.org/
 * MireDot - http://www.miredot.com/
 * Read the Docs - http://rtfd.org
+
+## HOAETOS 
+
+TBD - write down what to take into account of that (ids in return when creating a resource, links in the headers, etags...)
