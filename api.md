@@ -2,7 +2,8 @@
 
 Here you can find a list of tools to document APIs
 
-* http://jashkenas.github.io/docco/
+* Javascript - http://jashkenas.github.io/docco/
+* Doxygen - http://www.stack.nl/~dimitri/doxygen/ (oldish)
 
 ## Javadoc
 Javadoc is a bit oldish and it could be improved a lot to document java apis. 
@@ -18,3 +19,5 @@ Based on Swagger work https://www.openapis.org/ try to specify a vendor independ
 ## Tools to describe document APIs
 * Swagger - http://swagger.io/
 * Apiary - https://apiary.io/
+* Mashape - https://www.mashape.com/
+* RAML - http://raml.org/?refer=api-portal
