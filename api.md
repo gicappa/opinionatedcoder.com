@@ -8,7 +8,7 @@ Here you can find a list of tools to document APIs
 ## Javadoc
 Javadoc is a bit oldish and it could be improved a lot to document java apis. 
 
-[x] create a template to improve the quality of the documentation of the java files to end up with something similar to _Read the docs/Sphinx_ (http://rtfd.org) with a search field highlighitings Tips, Warinings, table of contents...
+[x] create a template to improve the quality of the documentation of the java files to end up with something similar to _Read the docs/Sphinx_ (http://rtfd.org) with a search field highlighitings Tips, Warinings, table of contents. Using bootstrap could be a very convenient option.
 
 # RESTful API resources
 
