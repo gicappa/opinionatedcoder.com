@@ -13,11 +13,13 @@
   * Likes 
   * Messaging 
   * Status Updates
-* Static Requests 
+* Static Requests (CDN)
   * Photos
   * Videos
   * Javascript/CSS
   
+Egress: byte outgoing / Ingress: byte ingoing
+
 ### L4/L7 Load Balancing 
 ### Edge pop and reducing Latencies
 ### Global DNS Load Balancing
