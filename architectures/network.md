@@ -7,5 +7,14 @@
 
 ## Facebook.com
 
-* Serving Dynamic Facebook requests 
-* L4/L7 Load Balancing 
+### Serving Dynamic Facebook requests 
+* Dynamic Requests 
+  * Newsfeed
+  * Likes 
+  * Messaging 
+  * Status Updates
+* Static Requests 
+### L4/L7 Load Balancing 
+### Edge pop and reducing Latencies
+### Global DNS Load Balancing
+
