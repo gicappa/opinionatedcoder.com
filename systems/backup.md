@@ -14,3 +14,14 @@ sull'ambiente con ganeti, invece, non ho una macchina a fare da ponte per lo sto
 Il demone in questione si occupa anche di vietare le richieste di delete e simili.
 Non e' ovviamente una soluzione perfetta e sicuramente ha i suoi difetti, per alcuni versi e' in linea con i suggerimenti ricevuti anche qui.
 Volevo solo capire se stavo facendo troppo casino o la mia soluzione poteva andare bene, e direi che va bene.
+
+## Chiavi GPG
+Smaneggiando con alcuni keyring diversi dal mio personale in cui dovevo aggiungere e togliere alcune chiavi, grazie alla chiarezza di gpg, ho per errore rimosso la mia chiave privata dal mio keyring.
+Nessun problema, ovviamente ho il mio bel backup e quindi non la ho certamente persa.
+Faccio quindi subito un bel gpg --import miachiave.privata.asc, e la importa correttamente.
+La edito e gli do il trust. A gpg -K la vedo correttamente, sembra tutto ok.
+Non ci sono altre chiavi private.
+Se tento di firmare qualcosa:
+gpg: signing failed: No secret key
+gpg: [stdin]: clearsign failed: No secret key
+
