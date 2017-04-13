@@ -25,3 +25,14 @@ Se tento di firmare qualcosa:
 gpg: signing failed: No secret key
 gpg: [stdin]: clearsign failed: No secret key
 
+ fde + yubico
+ AES256 [edit].
+ FileVault con nuke della password on sleep sui portatili, FileVault e basta sul fisso. Password per modificare la sequenza di boot, yubikey come 2FA per il login e per L'unlock dello screensaver.
+ Io tengo un'unica partizione cifrata, che monto solo all'occorrenza e dove metto solo cose di vitale importanza ma di accesso raro. In tal modo se qualcuno ha accesso al mio portatile per un tempo non lunghissimo, deve beccare uno dei momenti in cui la partizione e' montata, altrimenti nisba. Cifrare tutto e non smontare e' un approccio utile per altri tipi di attacchi, in particolare nel caso in cui il portatile venga smarrito mentre e' spento.
+ 
+https://www.dyne.org/software/tomb/
+
+Io ho *tutto* in fde, e quando dico tutto intendo tutto, ws, portatile, cellulare, media server etcetc. Non pesa particolarmente, ma in generale me ne fotto della velocità di accesso, la reliability è per me molto più importante, e dove ho davvero bisogno di velocità vado di tmpfs, eventualmente come overlay cache.
+Tutto in FDE. Con le CPU di oggi e AES-NI o equivalenti oramai è praticamente a costo zero.
+FDE con SecureBoot e chiavi custom sul portatile, a casa non ho (ancora) migrato tutto su FDE.
+ma io so che è sbagliato fare un ecryptfs ad esempio della home se sotto hai la FDE
