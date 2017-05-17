@@ -21,7 +21,7 @@ If you want to rename the current branch, you can simply do:
 
 ````git branch -m <newname>````
 
-#### Chaching GIT credential for https access
+#### Caching GIT credential for https access
 ```git config --global credential.helper osxkeychain```
 or for linux
 ```git config --global credential.helper "cache --timeout=3600"```
