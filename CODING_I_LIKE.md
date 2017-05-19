@@ -14,7 +14,28 @@ public class DefaultDeliveryAgent implements DeliveryAgent {
 }
 ```
 
-## The domain module will hold all the domain abstraction with adaptor interfaces
+## The Domain
+* The domain module will hold all the domain abstraction with adaptor interfaces
+* The domain will always contain classes that speak the domain language. For instance the logging should have his own class that has specific methods with names that descrive what you are logging and why. As an example: 
+```java
+public interface GatewayLogger {
+  public void logNoRecipientHasBeenDiscovered(Message message);
+  public void logNumberOfDiscoveredRecipient(Message message, List<Service> recipient);
+  ...
+}
+
+public class Slf4jGatewayLogger {
+  private Logger logger = LoggerFactory.getLogger(Slf4jGatewayLogger.class);
+  
+  public void logNoRecipientHasBeenDiscovered(Message message) {
+    if (!logger.isInfoEnabled()) return;
+    
+    logger.info("no recipient has been discovered for message {}", message); 
+  }
+  
+  ...
+}
+```
 
 # Java Exceptions
 - prefer unchecked exceptions over the checked ones. 
