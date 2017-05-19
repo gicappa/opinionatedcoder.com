@@ -28,6 +28,9 @@ or for linux
 
 http://stackoverflow.com/questions/5343068/is-there-a-way-to-skip-password-typing-when-using-https-github
 
+#### Checking the tracking between 
+```git branch -vv```
+
 # SysAdmin
 ## iotop 
 http://www.cyberciti.biz/hardware/linux-iotop-simple-top-like-io-monitor/
