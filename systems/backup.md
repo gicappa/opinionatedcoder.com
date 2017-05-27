@@ -40,6 +40,9 @@ Da uno dei PC monto lo share con le foto/video "da conservare" con un link simbo
 Ho un disco esterno collegato al NAS solo alla bisogna dove sposto le foto dei viaggi e della bimba per ulteriore sicurezza (visto che uso winzozz) da vari *Locker.
 Giuro che per tutto l'ambaradan ho speso pochissimo e per me basta e avanxa
 ## veeam
+## Crashplan
+## Carbonite
+## Backblaze
 
 ## Chiavi GPG
 Smaneggiando con alcuni keyring diversi dal mio personale in cui dovevo aggiungere e togliere alcune chiavi, grazie alla chiarezza di gpg, ho per errore rimosso la mia chiave privata dal mio keyring.
