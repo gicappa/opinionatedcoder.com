@@ -53,3 +53,7 @@ This is where object are created and connected.
 - prefer unchecked exceptions over the checked ones. 
 - when an exceptional behavior happens throw the unchecked exception with all the possible debugging information
 - catch all the unchecked exception where it's possible to communicate to the user an ERROR message. Typically the catching of instances of runtime exception can be done at 'main partition' level, in the application module.
+
+## Runtime Classloading
+
+Runtime classloading can be used to avoid direct dependencies from application and domain modules to the infrastructure details. The domain will used their own interface to for instance make a REST call but the implementation will be taken from a class that has no direct import anywhere in the application/domain code and will be fully substitutable without any issue with another in acordance with LSP. 
