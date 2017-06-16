@@ -1,5 +1,5 @@
 # Application Structure
-
+```
 app-main
 app-domain
 app-cache
@@ -25,3 +25,4 @@ infrastructure
   \
    database
 pom.xml
+```
