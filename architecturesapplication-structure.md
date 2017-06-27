@@ -20,9 +20,13 @@ adapter-ds-consul
 adapter-ds-zookeeper
 
 scripts
+initialization
 config
 infrastructure
   \
    database
 pom.xml
 ```
+
+It should be clearly stated how and where the initialization of the application is happening.
+The same applies to the configuration
