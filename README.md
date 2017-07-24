@@ -21,12 +21,15 @@ If you want to rename the current branch, you can simply do:
 
 ````git branch -m <newname>````
 
-#### Chaching GIT credential for https access
+#### Caching GIT credential for https access
 ```git config --global credential.helper osxkeychain```
 or for linux
 ```git config --global credential.helper "cache --timeout=3600"```
 
 http://stackoverflow.com/questions/5343068/is-there-a-way-to-skip-password-typing-when-using-https-github
+
+#### Checking the tracking between 
+```git branch -vv```
 
 # SysAdmin
 ## iotop 
