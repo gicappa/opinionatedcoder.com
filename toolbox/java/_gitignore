@@ -1,0 +1,8 @@
+.settings
+.metadata
+.classpath
+.project
+*.iml
+target/
+.idea
+generated-sources/
