@@ -1,6 +1,10 @@
 # Java Best Practices 
 
-# The DDD Approach
+## The Domain Driven Development Lesson
+
+### Overview
+A book "Pattern of Enterprise Architecture" was issued in 2002 and the IT world changed dramatically. Before that moment the world enterprise referred to the IT was just meaning "slow and bloated but it's the only way we know to do it". Pattern of enterprise architecture started speaking about *domain drive* instead of just *data driven* an instead of enforcing a new type of *EJBs* (very popular at that time) enforced the concept of *POJO*, a buzzword to rediscover Plain Old Java Objects. 
+The book has been a big source of inspiration and it put the ground for some base concepts like *Domain Model* (a pattern explained in the book), *Repository Pattern* and the antipattern of an *Anemic Domain Model* representing a layered architecture.
 
 The Java language can offer many of the advatages people search for in spring without using spring. Spring is a good framework but has the issue to add code that is not your exactly in the heart of your project. The real advantage of spring is not the dependency injection but it's some forced good architecture decision like separating the creation and wiring of the objects from the actual usage of them. This can be achieved without spring as well with some well structured code.
 
