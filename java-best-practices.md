@@ -1,5 +1,5 @@
 # Java Best Practices 
-## Codinf for interfaces
+## Coding for interfaces
 
 Always Code for interfaces. Always rely on abstractions.Interfaces have the name of the abstraction while implementation will have a Default prefix in front of the name. Example:
 ```java
