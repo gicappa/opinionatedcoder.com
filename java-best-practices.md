@@ -1,18 +1,4 @@
 # Java Best Practices 
-## Coding for interfaces
-
-Always Code for interfaces. Always rely on abstractions.Interfaces have the name of the abstraction while implementation will have a Default prefix in front of the name. Example:
-```java
-public interface DeliveryAgent {
-...
-}
-```
-
-```java
-public class DefaultDeliveryAgent implements DeliveryAgent {
-...
-}
-```
 
 # The DDD Approach
 
@@ -42,6 +28,22 @@ public class Slf4jGatewayLogger {
   ...
 }
 ```
+
+## Coding for interfaces
+
+Always Code for interfaces. Always rely on abstractions.Interfaces have the name of the abstraction while implementation will have a Default prefix in front of the name. Example:
+```java
+public interface DeliveryAgent {
+...
+}
+```
+
+```java
+public class DefaultDeliveryAgent implements DeliveryAgent {
+...
+}
+```
+
 
 ## Application
 
