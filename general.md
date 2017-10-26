@@ -10,9 +10,10 @@ In this section I will present a bunch of architectures that can be built using 
 
 ## Hints & Snippets ToolBox
 ### GIT
-#### Remove branches no longer on remote
-```git gc --prune=now``` do the trick
-```git fetch -p```
+#### Cleaning up branches
+```git gc --prune=now``` do some garbage collection
+```git fetch -p``` => delete the tracking to remote branches that are no longer in remote repo
+```git branch --merged | grep -v master | sed 's/\*/ /' | xargs git branch -d``` => delete all the local branches already merged in master (avoiding deleting master)
 #### Rename a branch
 ````git branch -m <oldname> <newname>````
 
