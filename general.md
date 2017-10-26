@@ -13,7 +13,7 @@ In this section I will present a bunch of architectures that can be built using 
 #### Cleaning up branches
 ```git gc --prune=now``` do some garbage collection
 ```git fetch -p``` => delete the tracking to remote branches that are no longer in remote repo
-```git branch --merged | grep -v master | sed 's/\*/ /' | xargs git branch -d``` => delete all the local branches already merged in master (avoiding deleting master)
+```git branch --merged | grep -v master | grep -v '\*' | xargs git branch -d``` => delete all the local branches already merged in master (avoiding deleting master and the current branch)
 #### Rename a branch
 ````git branch -m <oldname> <newname>````
 
