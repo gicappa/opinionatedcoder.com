@@ -1,0 +1,66 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const last_posts = posts.slice(0, 3);
+---
+
+<BaseLayout sideBarActiveItemID="home">
+  <div class="pb-12 mt-5">
+    <div class="text-xl py-1">Hello 👋</div>
+    <div class="text-5xl font-bold">I'm Gian Carlo Pace</div>
+    <div class="text-3xl py-3 font-bold">Software Engineer and Architect</div>
+    <div class="py-2">
+      <text class="text-lg">
+        I am a passionate software engineer and software architect with more than twenty years of experience.
+        <i>My interests are software architectures, distributed systems, interoperability, system scalability and high availability, software development and its lifecycle.</i>
+        <!-- <ul>
+          <li>I started coding when I was eleven, I graduated in software engineering at Politecnico di Milano and I’m professionally involved in the IT field from more than 20 years.</li>
+          <li>I opened a software company named Webrise and I started working as consultant for the TLC Fastweb (Italy) and Vodafone (Germany) and for startups like Gild (USA), Jobrapido (Italy) and Etalia (Switzerland).</li>
+          <li>I've spent 6 years working in the European Commission on the project Common Information Sharing Environment (CISE) for Maritime Surveillance connecting maritime public authorities across Europe improving European citizens' saftety and security.</li>
+          <li>I'm currently working in Hyland / Alfresco on Enterprise Content Management systems, a recurring and beloved subject in my career.</li>
+        </ul> -->
+      </text>
+    </div>
+    <div class="mt-8">
+      <a class="btn btn-outline" href="https://x.com/gicappa" target="_blank"> Follow me on X!</a>
+      <!-- <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
+        Get This template
+      </a> -->
+    </div>
+  </div>
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-2">Projects</div>
+  </div>
+
+  <HorizontalCard
+    title="Modern Java Archetype"
+    img="/maven-project.jpg"
+    desc="An archetype to bootstrap a modern Java application with Java 21, Junit 5, AssertJ, Mockito, and JaCoCo pre configured."
+    url="#"
+    badge="NEW"
+  />
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Blog Posts</div>
+  </div>
+
+  {
+    last_posts.map((post) => (
+      <>
+        <HorizontalCard
+          title={post.data.title}
+          img={post.data.heroImage}
+          desc={post.data.description}
+          url={"/blog/" + post.slug}
+          target="_self"
+          badge={post.data.badge}
+        />
+        <div class="divider my-0" />
+      </>
+    ))
+  }
+</BaseLayout>

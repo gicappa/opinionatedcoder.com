@@ -1,0 +1,188 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Personal Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    Software is my passion. I have been a passionate coder from the age of eleven when I received my C=64. I graduated in software engineering at Politecnico di Milano, and I’m professionally involved in the IT field since more than 20 years.
+    I love writing clean, readable and maintainable code, I am passionate about designing scalable and highly available architectures, and I am into agile methods and practices since 2003.
+    <br/><br/>
+    I fell in love with the opensource movement, and I understood the value of sharing knowledge and giving back to the community.
+    I learnt communication and continuous learning are indispensable grounds to build a successful software product.
+    I approached agile methods in 2003 to uncover better ways to produce software on time and fulfilling customer needs. 
+    <br/><br/>
+    I've been working for large enterprises, small and promising startups and governmental organisations and, astoundingly, I still love creating architectures, developing software and building products together with great people.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Area of expertise</div>
+  </div>
+  
+  <div class="time-line-container grid gap-4 mb-10">
+    <ul class="list-disc md:columns-5 columns-2 mx-6">
+      <li>Microservice Architecture</li>
+      <li>RESTful Architectures</li>
+      <li>Scalable Design</li>
+      <li>Highly Available Design</li>
+      <li>Fault Tolerance Design</li>
+      <li>TDD/BDD</li>
+      <li>OOP/SOLID</li>
+      <li>FP</li>
+      <li>Java</li>
+      <li>Javascript</li>
+      <li>Ruby</li>
+      <li>AWS</li>
+      <li>Kubernetes</li>
+      <li>GitHub</li>
+      <li>Kafka</li>
+      <li>RabbitMQ</li>
+      <li>PostgreSQL</li>
+    </ul>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Work Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Architect 4 @ Hyland"
+      subtitle="From 2022 to present, Working Remotely, Ohio, USA">
+    Test
+    <br/><br/>
+    Test
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Developer 4 @ Hyland"
+      subtitle="From 2021 to 2022, Working Remotely, Ohio, USA">
+    I joined the Hyland family a few months after the acquisition of Alfresco. As a Developer 4, I'm helping the engineering to release new functionalities of the Alfresco family products. Hyland Alfresco offers a wide product range to support a fully fledge Enterprise Document Management completely integrated with clients' corporate processes.
+    <br/><br/>
+    Hyland Alfresco's products are cloud-first and based on bleeding edge technologies of the IT landscape. Hyland Alfresco is developing a software solution based on a microservice architecture and deployed using advanced DevOps / GitOps techniques in Kubernetes clusters (on premises and in the cloud).
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Scientific / Technical Project Officer @ JRC of the European Commission"
+      subtitle="From 2015 to 2021, Ispra (VA), Italy">
+      In the JRC I'm part of the Transport and Border Security E.5 Unit, and since 2015 I’m contributing to the project Common Information Sharing Environment (CISE) for the Maritime Surveillance (FP7).
+      <br/><br/>
+      CISE is a completely distributed peer-to-peer system that aims at fostering the information exchange of the Maritime European Authorities (like navies, fisheries, customs, etc.) by connecting their legacy systems through a cross country and cross-sectorial network.
+      <br/><br/>
+      On the technical side, we are developing a microservice architecture using the Java, JavaScript and Ruby programming language, deployed both on-premises (VMware) and in the cloud (AWS) using a Kubernetes cluster supported by Rancher.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Coach and Software Craftsman @ Etalia.net"
+      subtitle="From 2014 to 2015, Lugano Area, Switzerland">
+      Etalia SA was a startup born to help newspapers with the difficulties of the digital age. The press industry lives a bad momentum due to the change in people habits in reading the information, mostly online and from many different sources, like online news websites, Facebook, Twitter, newsfeeds and so on.
+      <br/><br/>
+      In Etalia SA I contributed to building the development lifecycle, accordingly to the agile methods, creating a Kanban board to track the product progress avoiding bottlenecks.
+      I used to manage and work together with three developers (in a team composed of five developers) and to analyse the request coming from the marketing board figuring out how to implement them.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Software Architect @ Jobrapido"
+      subtitle="From 2013 to 2014, Milan Area, Italy">
+      Jobrapido is a startup that aims at providing a job to all the worldwide job seekers. Jobrapido provides a search engine for job openings up to 59 countries in the world. The major challenge in Jobrapido has been scaling up of a distributed architecture of an highly trafficked (+300k page views/month) system under tight deadlines and demanding company objectives.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Software Craftsman @ Gild, Inc."
+      subtitle="From 2012 to 2013, San Francisco Bay Area, California, USA">
+      Gild was a startup located in San Francisco trying to solve the struggle many companies in the bay areas had in finding and hiring software engineers. The platform was merging toghter information coming from several publicly available sources (github, bitbucket, Linkedin, etc.) analyzing the data and providing a search engine to the clients to help them in the research.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Software Architect @ fractalgarden"
+      subtitle="From 2009 to 2012, Milan Area, Italy">
+      Fractalgarden is a startup incubator and a company that invests in software and hardware products always striving for high quality standards. One of the biggest challeng was a complete rewriting of the software that has been developed across seven years. The rebuilt was performed incrementally while the software was used by more than one hundred employees using feature toggling and an agile management with great satisfaction of the customer since it has been released on time and budget.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Senior Developer @ Vodafone Global"
+      subtitle="During 2009, Düsseldorf, North Rhine-Westphalia, Germany">
+      I've been a consultant software developer in an international environment collaborating with distributed teams (located in Germany, Denmark, England) on the integration of an internal product with social networks like Facebook, Google, MySpace and Flickr. The product was designed to serve 6 million users with a highly scalable system written in Java and connected to other heterogeneous systems of complex production infrastructure.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Project Lead @ Openmind S.r.L."
+      subtitle="From 2008 to 2009, Milan Area, Italy">
+      I've been the project leader and developer of complex invoicing software for a big Italian company working on wiretapping for the Italian public administration.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Software Architect & Senior Developer @ Sourcesense S.r.L."
+      subtitle="From 2006 to 2008, Milan Area, Italy">
+      I developed and managed many projects from requirements to implementations relating with the customers. The projects could vary from e-commerce solutions to institutional web sites backed by a CMS or vertical consultancy to refactor a jee architecture into a simpler more performant one.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Software Architect & Senior Developer @ Fastweb S.p.A."
+      subtitle="From 2006 to 2008, Milan Area, Italy">
+      The project I was involved in is named SINTEL and it is an e-procurement application developed for Regione Lombardia (an Italian PA) and it’s currently live with hundreds of auctions running per day and billion of transactions managed per year.
+      I collaborated in building a software architecture in agreement with the marketing department requirements, I managed a medium size team of developer and wrote code.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Owner @ Webrise S.r.L."
+      subtitle="From 2002 to 2004, Milan Area, Italy">
+      I founded Webrise to provide technical knowledge and service to the Bibop research Int. During this challenging and rewarding experience, I was responsible of all the activities needed to run a company: managing administration, customer care, marketing and last but not least architecting and developing outstanding applications.
+      Some projects: www.ied.it, project.ied.it, search.kataweb.it, www.paguro.net, aaa.cercasialice.it, www.lacasadialice.it / www.rossoalice.it.
+    </TimeLineElement>    
+    
+    <TimeLineElement
+      title="Senior Developer @ Bibop research Int. S.p.A."
+      subtitle="From 2001 to 2002, Milan Area, Italy">
+      In Bibop Research I started managing projects, working as a senior developer and supervising a junior developer. Web applications and the showbusiness world were the main action field. Being deeply involved in Open Source software development and Java community, Bibop gave me the chance to start learning and loving them. 
+      Some projects: www.virginmusic.it, www.cristinaparodi.it, www.dariabignardi.it, www.intravisione.it
+    </TimeLineElement>
+    
+    <TimeLineElement
+      title="Developer @ TPL Informatica"
+      subtitle="From 1998 to 2001, Milan Area, Italy">
+      TPL Informatica gave me the chance to write my graduation thesis and to grow up in knowledge and experience. I developed a mobile application to inquire the status of the insurance policy for a big Italian insurance group, a WAP trading online site for Directa SIM (in collaboration with Omnitel 2000) and a desktop client-server software for the banking environment.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Junior Consultant @ Intesis"
+      subtitle="During 1997, Milan Area, Italy">
+      My very first collaboration. I applied a patch to an SNMP software for a monitoring system in the Telecom intranet of Mestre.
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Computer Engineering University @ Politecnico di Milano"
+      subtitle="1992 to 1999, Milan, Italy">
+      Graduated in Computer Engineering at “Università degli studi Politecnico di Milano”, with rating of 87/100. The thesis developed a web application of trading online with the title: “Reengineering di un’applicazione monolitica ad una struttura three-tier orientata al web”.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Scientific High School @ Guglielmo Marconi"
+      subtitle="1986 to 1991, Chiavari (GE), Italy">
+      Graduation at scientific high school  “G. Marconi” of Chiavari (GE) rated 52/60.
+    </TimeLineElement>
+  </div>
+
+  <!-- <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a href="#" target="_blank"> Certification Name (with link)</a>
+    </li>
+    <li>
+      <a href="#" target="_blank"> Certification Name (with link)</a>
+    </li>
+  </ul> -->
+</BaseLayout>
