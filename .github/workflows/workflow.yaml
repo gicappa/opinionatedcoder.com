@@ -4,7 +4,7 @@ name: AWS example workflow
 on:
   push
 env:
-  BUCKET_NAME : "arn:aws:s3:::opinionatedcoder.com"
+  BUCKET_NAME : "arn:aws:s3:eu-west-1:777920111935:accesspoint/github"
   AWS_REGION : "eu-west-1"
 
 # permission can be added at job level or workflow level
@@ -28,4 +28,3 @@ jobs:
       - name:  Copy index.html to s3
         run: |
           aws s3 sync s3://${{ env.BUCKET_NAME }}/ ./ --exclude ".*"
-
