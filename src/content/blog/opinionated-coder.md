@@ -1,6 +1,6 @@
 ---
 title: "Opinionated Coder Kick-off"
-description: "What is opinionated coder"
+description: "Launching a blog in 2024 for a fresh start. Personal thoughts, project commitments, and a shot at helping someone."
 pubDate: "Jan 15 2024"
 heroImage: "/opinionated-coder.webp"
 tags: ["kick-off"]
