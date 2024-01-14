@@ -5,12 +5,13 @@ import Footer from "../components/Footer.astro";
 import SideBar from "../components/SideBar.astro";
 
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+import {Image} from "astro:assets";
 
 const { image, title = SITE_TITLE, description = SITE_DESCRIPTION, includeSidebar = true, sideBarActiveItemID } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en" data-theme="lofi">
+<html lang="en" data-theme="fantasy">
   <head>
     <BaseHead title={title} description={description} image={image} />
   </head>
@@ -18,6 +19,10 @@ const { image, title = SITE_TITLE, description = SITE_DESCRIPTION, includeSideba
     <div class="bg-base-100 drawer lg:drawer-open">
       <input id="my-drawer" type="checkbox" class="drawer-toggle" />
       <div class="drawer-content bg-base-100">
+        { image && (
+                <Image width={750} height={422} format="webp" src={image} alt={title} class="w-full mb-6" />
+            )
+        }
         <Header title={SITE_TITLE} />
         <div class="md:flex md:justify-center">
           <main class="p-6 pt-10 lg:max-w-[900px] max-w-[100vw]">
