@@ -1,6 +1,6 @@
 {
-  "name": "astrofy",
-  "description": "Astrofy is a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS. Create in minutes a website with Blog, CV, Project Section, and RSS Feed.",
+  "name": "opinionatedcoder.com",
+  "description": "Gian Carlo Pace's website blog and tech radiator",
   "type": "module",
   "version": "2.5.1",
   "private": true,
