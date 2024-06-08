@@ -6,6 +6,7 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   site: "https://gicappa.github.io",
-  base: "/opinionatedcoder.com",
+  base: "/opinionatedcoder.com/",
+  trailingSlash: "always",
   integrations: [mdx(), sitemap(), tailwind()],
 });
