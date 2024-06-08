@@ -7,6 +7,5 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   site: "https://opinionatedcoder.com",
   base: "/",
-  trailingSlash: "always",
   integrations: [mdx(), sitemap(), tailwind()],
 });
